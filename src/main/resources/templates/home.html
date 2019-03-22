@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Oauth2 Authorization test - client app</title>
+</head>
+<body>
+	<h1 th:text="'Hi ' + ${user.nickName} + ', welcome back!'"></h1>
+	<h3>your personal info from [UserInfo Application]</h3>
+	<table>
+		<tr>
+			<td><b>User name</b></td>
+			<td th:text="${user.name}">username</td>
+		</tr>
+		<tr>
+			<td><b>Nick name</b></td>
+			<td th:text="${user.nickName}">nickName</td>
+		</tr>
+		<tr>
+			<td><b>Email address</b></td>
+			<td th:text="${user.email}">email</td>
+		</tr>
+	</table>
+	
+	<div>
+		<a href="/logout">[Log out]</a>
+	</div>
+</body>
+</html>

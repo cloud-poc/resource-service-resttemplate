@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConditionalOnProperty(prefix = "security", value = "oauth2.client.auth-code.enabled")
+//@ConditionalOnProperty(prefix = "security", value = "oauth2.client.auth-code.enabled")
 public class AuthorizationCodeConfiguration {
 	private static final String GRANT_TYPE = "authorization_code";
 
